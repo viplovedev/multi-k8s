@@ -12,5 +12,5 @@ docker push viplovedev/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=viplovedev/multi-server:$SHA
-kubectl set image deployments/client-deployment server=viplovedev/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=viplovedev/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=viplovedev/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=viplovedev/multi-worker:$SHA
